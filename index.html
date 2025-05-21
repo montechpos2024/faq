@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1>Montech Pos - Các Câu Hỏi Thường Gặp</h1>
-<h3>Xin chào, bạn đang liên hệ ngoài giờ làm việc, vui lòng nhập vào ô tìm kiếm vấn đề gặp phải để được hỗ trợ</h3>
+<h3>Xin chào, vui lòng nhập vào ô tìm kiếm vấn đề gặp phải để được hỗ trợ. Vui lòng làm theo các bước được hướng dẫn để khắc phục nhanh nhất.</h3>
 <input id="searchInput" placeholder="Tìm theo từ khóa hoặc mô tả nội dung bạn cần hỏi..." type="text"/>
 <div id="qaContainer">
 <div class="qa-item" onclick="this.classList.toggle('open')">
@@ -37,8 +37,9 @@
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Đơn vị không có mã số thuế.</p>
 <p><strong>Giải pháp:</strong> Nhập 'NULL' vào ô MST. Các ô thông tin khác nhập bình thường.</p>
+<p>Nhập đủ thông tin và nhấn LƯU KHÁCH HÀNG -> THÊM KH VÀO TT XUẤT HOÁ ĐƠN.</p>
 <p>Có thể dùng NULL1, NULL2,… nếu nhiều đơn vị khác nhau không có MST.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> hóa đơn, nhà nước, không có MST</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> hóa đơn, đơn vị, nhà nước, không có mã số thuế, mã số thuế, không có MST</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
@@ -66,32 +67,32 @@
 <div class="qa-item" onclick="this.classList.toggle('open')">
 <h3>3. Không có dữ liệu bán hàng, tất cả giao dịch đều không hiển thị</h3>
 <div class="qa-answer">
-<p><strong>Nguyên nhân:</strong> Lỗi kết nối giữa thiết bị và hệ thống bị treo.</p>
+<p><strong>Nguyên nhân:</strong> Lỗi kết nối giữa thiết bị và internet, hệ thống mạng bị treo.</p>
 <p><strong>Giải pháp:</strong> Tắt Wifi và hộp MonPos, đợi 5’ rồi khởi động lại cả hai. Sau đó nhấn nút "Tải Tất Cả Giao Dịch" , dữ liệu sẽ hiển thị đầy đủ.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> không có dữ liệu, Monpos, giao dịch</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> không có dữ liệu, Monpos, giao dịch, rớt wifi</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
-<h3>4. Signsoftdream, không cập nhật được ký số, kết nối thất bại, không lấy được token</h3>
+<h3>4. Không lấy được token, Signsoftdream, không cập nhật được ký số, kí số chưa được cập nhật ...</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Lỗi liên quan đến ký số.</p>
-<p><strong>Giải pháp:</strong> Kiểm tra mật khẩu hóa đơn, số lượng hoá đơn còn hay không , kiểm tra hạn sử dụng chữ ký số.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> ký số, token, lỗi kết nối</p>
+<p><strong>Giải pháp:</strong> Kiểm tra lại mật khẩu hóa đơn có bị thay đổi không, số lượng hoá đơn còn hay không , kiểm tra hạn sử dụng chữ ký số.</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> ký số, token, lỗi kết nối, sign, hsm, esign</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
 <h3>5. Không kết nối được server</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Lỗi server hoặc mạng.</p>
-<p><strong>Giải pháp:</strong> Khách hàng vui lòng gọi hỗ trợ bên hóa đơn để kiểm tra. Montech Pos không có server.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> server, kết nối, Ultraview</p>
+<p><strong>Giải pháp:</strong> Khách hàng vui lòng gọi hỗ trợ bên hóa đơn để kiểm tra. Nếu có thể nhờ restart server. Montech Pos không có server.</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> server, không kết nối, mạng lỗi</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
 <h3>6. Xuất hoá đơn không thành công ERR:3 ... element has an invalid value</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Sai định dạng vùng (Region) và thời gian.</p>
-<p><strong>Giải pháp:</strong> Chuyển định dạng vùng về United Kingdom.</p>
+<p><strong>Giải pháp:</strong> Chuyển định dạng vùng về United Kingdom để đúng định dạng dữ liệu.</p>
 <p class="keyword" style="display: none;"><strong>Từ khóa:</strong> ERR:3, định dạng, vùng, tiếng việt,thời gian</p>
 </div>
 </div>
@@ -100,15 +101,15 @@
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Chưa mua tài nguyên hóa đơn/ Hết tài nguyên hóa đơn xăng dầu</p>
 <p><strong>Giải pháp:</strong> Khách hàng liên hệ bên hoá đơn để hỗ trợ, sau khi mua lại tài nguyên hóa đơn phần mềm Montech Pos vẫn kết nối bình thường.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> License,LicenseInfo,OutofPetrol,chưa mua</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> NotBuyCash,Register,License,LicenseInfo,OutofPetrol,chưa mua</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
-<h3>8. AMOUNT_INVOICE_OVER_NUMBER</h3>
+<h3>8. Error: Amount_invoice_over_number</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Hết số hóa đơn đăng ký.</p>
-<p><strong>Giải pháp:</strong> Khách hàng liên hệ bên hoá đơn để hỗ trợ. Mua thêm hóa đơn để sử dụng.</p>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> hết số hoá đơn, invoice,over number</p>
+<p><strong>Giải pháp:</strong> Khách hàng liên hệ bên hoá đơn để được hỗ trợ. Mua thêm hóa đơn để sử dụng.</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> hết số hoá đơn, amount invoice,over number</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
@@ -120,7 +121,7 @@
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
-<h3>10. Pattern và Serial không phù hợp, hoặc không tồn tại hóa đơn đã đăng ký</h3>
+<h3>10. Error: Pattern và Serial không phù hợp, hoặc không tồn tại hóa đơn đã đăng ký</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Pattern hoặc Serial chưa được đăng ký đúng.</p>
 <p><strong>Giải pháp:</strong> Liên hệ công ty hóa đơn để được hỗ trợ xử lý nhanh nhất.</p>
@@ -130,14 +131,14 @@
 <div class="qa-item" onclick="this.classList.toggle('open')">
 <h3>11. Tại sao không có dữ liệu một trong số nhiều vòi bơm?</h3>
 <div class="qa-answer">
-<p><strong>Nguyên nhân:</strong> Lỗi dây tín hiệu kết nối giữa phần mềm và thiết bị trụ bơm, hoặc bị treo do nhiễu từ trụ.</p>
+<p><strong>Nguyên nhân:</strong> Lỗi dây tín hiệu kết nối giữa phần mềm và thiết bị trụ bơm, hoặc bị treo do nhiễu từ trụ bơm.</p>
 <p><strong>Giải pháp:</strong></p>
 <ol>
 <li>1.Tắt trụ bị mất kết nối khởi động lại sau 5 phút.</li>
 <li>2.Tắt/mở lại phần mềm Montech Pos.</li>
 <li>3.Nếu vẫn không có dữ liệu, liên hệ kỹ thuật lắp đặt đến kiểm tra.</li>
 </ol>
-<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> không có dữ liệu vòi, vòi mất dữ liệu, phần mềm Mon, kết nối</p>
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> nhiễu trụ, không có dữ liệu vòi, vòi mất dữ liệu, phần mềm Mon, kết nối</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
@@ -145,7 +146,7 @@
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Chưa xác định, có thể do đường truyền mạng không ổn định, đường truyền server chậm ...</p>
 <p><strong>Giải pháp:</strong>Cần đối chiếu kỹ thuật 2 bên để phối hợp xử lý</p>
-<p>Thống kê chính xác số lượng hoặc mã phát hiện sai sót giữa 2 bên , nhắn thông tin chi tiết vào nhóm kỹ thuật 2 bên để phối hợp kiểm tra.</p>
+<p>Khách hàng thống kê chính xác số lượng hoặc mã phát hiện sai sót giữa 2 bên , nhắn thông tin chi tiết vào nhóm kỹ thuật 2 bên để phối hợp kiểm tra.</p>
 <p>Khách hàng lưu ý nên xử lý lượng hoá đơn trong ngày ngay sau thời điểm bán và chọn khung giờ phát hành sớm để tránh cuối ngày quá tải dẫn đến dễ sai sót hoá đơn</p>
 <p class="keyword" style="display: none;"><strong>Từ khóa:</strong> lệch số lượng, lệch hoá đơn, ít hơn, nhiều hơn, bị thiếu, bị sót, không có giao dịch</p>
 </div>
@@ -154,13 +155,14 @@
 <h3>13. Tại sao không thể sửa thông tin và lưu sau khi tìm Mã Số Thuế (MST)?</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Một số trường không có nội dung hoặc chứa ký tự đặc biệt.</p>
-<p><strong>Giải pháp:</strong> Nhấn nút <strong>SỬA</strong>, sau đó chọn và nhập lại thông tin. Nếu ô "Tên Khách Hàng" trống thì nhấn 1 dấu cách (khoảng trắng) để có thể lưu.</p>
+<p><strong>Giải pháp:</strong> Nhấn nút <strong>SỬA</strong>, sau đó chọn và nhập lại thông tin. </p>
+<p>Nếu ô <strong>"Tên Khách Hàng"</strong> không cần điền thì nhấn 1 dấu cách (khoảng trắng) để có thể lưu.</p>
 <p><strong>Lưu ý:</strong> Tránh nhập dư khoảng trắng đầu/cuối hoặc ký tự đặc biệt.</p>
 <p class="keyword" style="display: none;"><strong>Từ khóa:</strong> sửa thông tin, mã số thuế, không lưu được, báo sai</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
-<h3>14. Làm sao để tách riêng giao dịch nội bộ ( kiểm định, đo lường, xả khí, xả gió, bơm xe nhà ...) không cần xuất hóa đơn?</h3>
+<h3>14. Làm sao để tách riêng giao dịch nội bộ ( kiểm định, đo lường, xả gió, bơm xe nhà ...) không cần xuất hóa đơn?</h3>
 <div class="qa-answer">
 <p><strong>Giải pháp:</strong> Sau khi bơm, chọn các giao dịch không cần xuất hóa đơn, nhấn nút màu cam thứ 3 "THÊM GIAO DỊCH NỘI BỘ". Nhập nội dung ghi chú và lưu lại để ghi nhớ và giải trình nếu cần.</p>
 <p>Danh sách nội bộ sẽ nằm ở tab <strong>QUẢN LÝ THÔNG TIN</strong> cột bên trái. Có thể kết xuất Excel để lưu trữ.</p>
@@ -172,22 +174,49 @@
 <h3>15. Xuất hoá đơn sai thông tin khách hàng (sai thông tin, sai địa chỉ, sai tên đơn vị ...) có sửa trên phần mềm được không?</h3>
 <div class="qa-answer">
 <p><strong>Nguyên nhân:</strong> Nhập sai thông tin người mua hàng.</p>
-<p><strong>Giải pháp:</strong> Làm điều chỉnh/ thay thế bên trang hoá đơn</p>
-<p>Montech Pos chỉ hỗ trợ lấy dữ liệu và xuất hoá đơn, tô đỏ sau khi xuất thành công. Mọi vấn đề In hoá đơn, Thay thế , Điều chỉnh, Gửi Cơ Quan Thuế ... khách hàng thao tác trực tiếp bên trang web hoá đơn.</p>
+<p><strong>Giải pháp:</strong> Khách hàng điều chỉnh/ thay thế bên trang hoá đơn</p>
+<p>Montech Pos chỉ hỗ trợ lấy dữ liệu và xuất hoá đơn, hoá đơn được tô đỏ sau khi xuất thành công. Mọi vấn đề In hoá đơn, Thay thế , Điều chỉnh, Gửi Cơ Quan Thuế ... khách hàng thao tác trực tiếp bên trang web hoá đơn.</p>
 <p class="keyword" style="display: none;"><strong>Từ khóa:</strong> sai thông tin, sai địa chỉ, sai mst, nhập sai, nhập nhầm, địa chỉ cũ, chưa cập nhật</p>
 </div>
 </div>
 <div class="qa-item" onclick="this.classList.toggle('open')">
 <h3>16. Xuất hoá đơn công ty nhầm thành hoá đơn khách lẻ (người mua không lấy hoá đơn) có xuất lại được không?</h3>
 <div class="qa-answer">
-<p><strong>Nguyên nhân:</strong> Bấm nhanh thao tác sai.</p>
-<p><strong>Giải pháp:</strong> Xuất bù hoặc điều chỉnh/ thay thế bên trang hoá đơn</p>
+<p><strong>Nguyên nhân:</strong> Bấm nhầm hoặc thao tác sai.</p>
+<p><strong>Giải pháp:</strong> Khách hàng xuất bù hoặc điều chỉnh/ thay thế bên trang hoá đơn</p>
 <p>Montech Pos sau khi xuất thành công (giao dịch tô màu đỏ) không thể xuất lại. Vì vậy khách hàng xuất nhầm cần xuất cho công ty có thể tạo thủ công trên trang hoá đơn đúng số tiền số lít để xuất bù hoặc Gửi thông báo sai sót, sau đó thay thế hoặc điều chỉnh. Khách hàng thao tác trực tiếp bên trang web hoá đơn.</p>
 <p class="keyword" style="display: none;"><strong>Từ khóa:</strong> khách lẻ, xuất công ty, xuất sai, nhầm, nhập sai, nhập lộn</p>
 </div>
-
 </div>
-<div class="copywrite">Montech Pos</div>
+<div class="qa-item" onclick="this.classList.toggle('open')">
+<h3>17.Tại sao hoá đơn sau khi phát hành không có chữ ký đơn vị?</h3>
+<div class="qa-answer">
+<p><strong>Nguyên nhân:</strong> Đang sử dụng kí online từ xa.</p>
+<p><strong>Giải pháp:</strong> Khách hàng liên hệ đơn vị hoá đơn để được tư vấn</p>
+<p>Hóa đơn được khởi tạo từ máy tính tiền kết nối chuyển dữ liệu điện tử với cơ quan thuế thì không bắt buộc có chữ ký số </p>
+<p>Tuy nhiên một số khách hàng và kế toán vẫn bắt buộc có chữ kí đơn vị để đảm bảo tính hợp lệ, nên nếu muốn hiển thị khách hàng liên hệ bên hoá đơn để được tư vấn.</p> 
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> kế toán, xuất công ty, không có hiện chữ ký, chữ kí đơn vị, thêm chữ ký</p>
+</div>
+</div>
+<div class="qa-item" onclick="this.classList.toggle('open')">
+<h3>18.Tại sao trên hóa đơn. Nếu lấy số lượng x đơn giá thì bị ít hơn so với thành tiền ?</h3>
+<div class="qa-answer">
+<p><strong>Nguyên nhân:</strong> Đặc thù bước đếm của hệ số bơm trong xăng dầu.</p>
+<p><strong>Giải pháp:</strong> Giải thích cho khách hàng hiểu</p>
+<p><strong>GIẢI THÍCH :</strong> 
+<p>Ngày 11/03/2025 – dầu DO 0,001S-V với giá 18.740 đồng/lít</p>
+<p>Khách mua 1.000.000 đồng thì trên trụ bơm sẽ hiển thị như hình.</p>
+<p>Mà giá bán 18.740 và tiền bán trên trụ 1.000.000 là đã bao gồm VAT.</p>
+<p>Nên trước thuế sẽ là:</p>
+<p>- Số lít đã bơm : <strong style="color:red">53,361</strong> lít</p>
+<p>- Đơn giá : 18.740/1,1 = <strong style="color:red">17.036,36</strong> đồng/lít</p>
+<p>- Tổng tiền thanh toán : 1.000.000/1,1 = <strong style="color:red">909.091</strong> đồng</p>
+<p>(03 số màu đỏ thể hiện trên hóa đơn đang đúng với thực tế trên trụ bơm). Vì tổng tiền thanh toán lại bị chia ngược lấy trước thuế và số lít không thể điều chỉnh, nên
+khi tính số lượng x đơn giá luôn có sai số so với xuất hóa đơn thủ công trước đây.</p> 
+<p class="keyword" style="display: none;"><strong>Từ khóa:</strong> kế toán, sai số, nhân ra sai, số lượng, đơn giá, thành tiền sai</p>
+</div>
+</div>	
+<div class="copywrite">MontechPos - Bản quyền thuộc sở hữu của Công Ty TNHH Kỹ Thuật Mon - Hotline 0909 820 403</div>
 <script>
         const searchInput = document.getElementById('searchInput');
         const qaItems = document.querySelectorAll('.qa-item');
