@@ -11,6 +11,7 @@
             width: 100%; padding: 10px; margin-bottom: 20px; font-size: 16px;
             border: 1px solid #079106; border-radius: 8px;
         }
+	 h3 {font-size: 1.5rem; /* 24px */margin-bottom: 8px;}
         .qa-item {
             background: #fff; padding: 15px; margin-bottom: 10px;
             border-left: 8px solid #079106; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -26,21 +27,14 @@
             to { opacity: 1; }
         }
         .keyword { color: #666; font-size: 0.9em; }
-	@media only screen and (max-width: 600px) {
-		  body {
-		    	font-size: 26px;
 	
-		  }
-		  input{
-			  height:50px;
-			  font-size: 30px;
-		 }
-		 h3{
-			 font-size:26px;
-		 }
-		.qa-item{
-			  margin-bottom:30px;
-		 }
+	/* Responsive adjustments */
+	@media (max-width: 480px) {
+		  body {font-size: 0.95rem; }
+		  p {font-size: 0.95rem;}
+		  input{ height:50px; font-size: 1.3rem;}
+		  h3{font-size: 1.3rem;}
+		  .qa-item{ margin-bottom:30px;}
 	}
     </style>
 </head>
